@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MyBlog</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-icons.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyBlog.styles.css" asp-append-version="true" />
+   
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark navBar-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyBlog</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Blog</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +23,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Posts" asp-action="Index">Post List</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -37,9 +40,65 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - MyBlog - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="bg-body-tertiary footer text-center text-muted">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init
+                   class="btn text-white btn-floating m-1"
+                   style="background-color: #3b5998;"
+                   href="#!"
+                   role="button">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a data-mdb-ripple-init
+                   class="btn text-white btn-floating m-1"
+                   style="background-color: #55acee;"
+                   href="#!"
+                   role="button">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <!-- Google -->
+                <a data-mdb-ripple-init
+                   class="btn text-white btn-floating m-1"
+                   style="background-color: #dd4b39;"
+                   href="#!"
+                   role="button">
+                    <i class="bi bi-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a data-mdb-ripple-init
+                   class="btn text-white btn-floating m-1"
+                   style="background-color: #ac2bac;"
+                   href="#!"
+                   role="button">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init
+                   class="btn text-white btn-floating m-1"
+                   style="background-color: #0082ca;"
+                   href="#!"
+                   role="button">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a data-mdb-ripple-init
+                   class="btn text-white btn-floating m-1"
+                   style="background-color: #333333;"
+                   href="#!"
+                   role="button">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
