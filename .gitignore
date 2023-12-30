@@ -12,6 +12,7 @@
 /Images/
 /Migrations/
 /packages/
+appsettings.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

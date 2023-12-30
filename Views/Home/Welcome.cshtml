@@ -1,0 +1,25 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/WelcomeStyles.css" />
+</head>
+<body>
+    <header class="intro">
+        <div class="background-image"></div>
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Welcome to our blog website</h1>
+                        <p class="intro-text">
+                            Here you can find useful tech posts
+                        </p>
+                        <a asp-controller="Posts" asp-action="Index">
+                            <div class="btn btn-success float-right mr-5">View posts 
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>

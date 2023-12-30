@@ -17,6 +17,10 @@ namespace MyBlog.Controllers
         {
             return View();
         }
+        public IActionResult Welcome()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

@@ -14,7 +14,7 @@ namespace MyBlog.Models
         public List<string>? PostImages { get; set; }
         public List<string>? VideoPlayer { get; set; }
         [Required, DataType(DataType.DateTime)]
-        public DateTime CreatedTime { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
         [Required, DataType(DataType.DateTime)]
         public DateTime UpdatedTime { get; set; }
     }
